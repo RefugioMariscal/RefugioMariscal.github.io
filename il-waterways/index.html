@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset=utf-8 />
+	<title>Waterways of Illinois</title>
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background: #f7f4eb;
+			font-family: 'Garamond', serif;
+			font-weight: 400;
+			color: #595959;
+		}
+
+		section {
+			/* width: 960px */
+			width: 80%;
+			margin: 20px auto;
+		}
+
+		h1 {
+			font-family: 'Garamond', serif;
+			font-weight: 300;
+			font-size: 3.5em;
+			letter-spacing: .04em;
+		}
+
+		h2 {
+			font-family: 'Garamond', serif;
+			font-weight: 500;
+			font-size: 1.5em;
+			letter-spacing: .04em;
+		}
+
+		p {
+			font-size: 1.2em;
+			line-height: 1.5em;
+		}
+
+		a {
+			color: #28c6d4;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		ul {
+			font-size: 1em;
+			padding-left: 20px;
+		}
+
+		li {
+			margin: 10px 0
+		}
+
+		#map {
+			width: 50%;
+			margin: 10px auto 10px 0px;
+		}
+
+		/* add custom style class here */
+		.max-width-img {
+			width:100%;
+		}
+
+    .column {
+      float: left;
+      width: 40%;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+
+	</style>
+</head>
+
+<body>
+	<section>
+
+		<h1>Illinois Waterways</h1>
+
+    <!-- Dscription column  -->
+    <div class="column"">
+      <br>
+      <h2>Authored by: Refugio Mariscal</h2>
+      <p>University of Kentucky, Department of Geography <br>
+        February 2019 <br>
+        Software used: QGIS 3.4.4 on macOS Mojave <br>
+        Data source: <a href="https://nationalmap.gov/small_scale/atlasftp.html" target="blank">The National Map Small-Scale website</a>. <br>
+        CRS: EPSG 3436 <br><br>
+        This map depicts the waterways of Illinois categorized by <a href="https://usgs-mrs.cr.usgs.gov/NHDHelp/WebHelp/NHD_Help/Introduction_to_the_NHD/Feature_Attribution/Stream_Order.htm" target="blank">Stahler stream order</a>.
+      </p>
+      <br>
+      <ul>
+        <li>See my projects on GitHub: <a href="https://github.com/RefugioMariscal" target="blank">RefugioMariscal</a></li>
+      </ul>
+      <br>
+    </div>
+
+    <!-- Map column -->
+    <div id='map' class="column">
+			<img src="graphics/illinois_waterways_1200px.png" alt="Map of Illinois Waterways" class="max-width-img">
+			<br>
+			<a href="graphics/illinois_waterways_8000px.png">Link to high resolution map</a>
+		</div>
+
+
+	</section>
+
+</body>
+
+</html>
