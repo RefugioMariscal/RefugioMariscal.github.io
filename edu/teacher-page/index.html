@@ -40,7 +40,7 @@
       font-family: 'Josefin Sans', 'Montserrat', 'Avenir';
       font-weight: 400;
       color: #1c2621;
-      padding: 8% 0% 0%;
+      padding: 4% 0% 0%;
     }
 
     h3 {
@@ -90,6 +90,52 @@
       width: 5%;
     }
 
+/* ------------------------------------------------------------------
+                   Dropdown Menu
+--------------------------------------------------------------------*/
+    .dropbtn {
+      background-color: #272828;
+      color: #fbfaf7;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+    }
+
+    .dropdown {
+      position: absolute; right: 0;
+      padding: 0 10%;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {background-color: #ddd;}
+
+    .dropdown:hover .dropdown-content {display: block;}
+
+    .dropdown:hover .dropbtn {background-color: grey;}
+
+/* ------------------------------------------------------------------
+--------------------------------------------------------------------*/
+
+
+/* ------------------------------------------------------------------
+                   Responsive Page
+--------------------------------------------------------------------*/
     @media screen and (max-width: 600px) {
       h1 {
         font-size: 3em;
@@ -102,6 +148,9 @@
       }
     }
 
+/* ------------------------------------------------------------------
+--------------------------------------------------------------------*/
+
   </style>
 
 </head>
@@ -109,6 +158,14 @@
 <body>
 
   <div class="main">
+    <div class="dropdown">
+      <button class="dropbtn">Classes</button>
+      <div class="dropdown-content">
+        <a href="#">7th Social Studies</a>
+        <a href="#">7th Science</a>
+        <a href="#">8th Social Studies</a>
+      </div>
+    </div>
     <h1 style="color:#272828">Mr. Mariscal's<br>
       Class Website</h1>
     <h2 style="color:#272828">ENL Science & Social Studies Teacher <br>
@@ -123,36 +180,13 @@
     <u>Interests & Hobbies</u><br>
     Hiking, Canoeing, Biking, Gardening, Birding, Maps, Conservation, Teaching my daughter about the natural world, Exploring new places <br><br>
     <u>Favorite Place in the World</u><br>
-    My parents' home town, El Salitre, Jalisco, Mexico </p><br><br>
+    My parents' home town, El Salitre, Jalisco, Mexico </p>
 
-    <h2 class="par">Lake County household income & park locations</h2>
-    <p>Although Lake County's Gini index is relatively high, Lake County Forest Preserve and Illinois State Park locations are fairly evenly spread throughout the county and located in communities of varying incomes, as can be seen in the map below. Demographic data on park and preserve visitors was unavailable at the time this map and website were published.</p>
-    <iframe width="100%" height="860" frameborder="0" src="https://nmp.carto.com/u/refugiomariscal/builder/cf35b4e6-8598-4651-815a-6d4c329768a8/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe><br>
-    <a href="https://nmp.carto.com/u/refugiomariscal/builder/cf35b4e6-8598-4651-815a-6d4c329768a8/embed" target="blank">Link to full page map</a>
+    <h2 class="par">Class links</h2>
+    <a href="">7th Grade Social Studies</a><br>
+    <a href="">7th Grade Science</a><br>
+    <a href="">8th Grade Social Studies</a><br>
 
-    <h2 class="par">Additional considerations</h2>
-    <p>Additional studies analyzing the impact the Lake County Forest Preserves and Illinois State Parks have on other factors such as mental and physical health of surrounding communities needs to be done to draw a more complete picture of the value they hold. These studies can help the county and state agencies plan future park locations and programs to ensure equitable access. </p>
-    <br><br><br>
-    <hr>
-    <h3>Maps and website authored by Refugio Mariscal. GitHub: <a href="https://github.com/RefugioMariscal" target="blank">@RefugioMariscal</a></h3>
-    <hr><br>
-    <p style="font-size:.9em">
-		University of Kentucky, Department of Geography <br>
-		March, 2019 <br>
-		Software used: <br>
-      - QGIS 3.4.4 on macOS Mojave <br>
-      - Atom 1.34.0 <br>
-      - <a href="https://carto.com/" target="_blank">Carto</a> <br>
-		Data sources: <br>
-      - <a href="https://factfinder.census.gov/faces/tableservices/jsf/pages/productview.xhtml?pid=ACS_12_5YR_B19083&prodType=table" target="blank">United States Census Bureau (Gini index data)</a> <br>
-      - <a href="https://www.census.gov/geo/maps-data/data/cbf/cbf_counties.html" target="blank">United States Census Bureau (county shapefiles)</a> <br>
-      - <a href="https://factfinder.census.gov/faces/tableservices/jsf/pages/productview.xhtml?pid=ACS_17_5YR_S1903&prodType=table" target="blank">United States Census Bureau (income data)</a> <br>
-      - <a href="https://www.census.gov/geo/maps-data/data/cbf/cbf_tracts.html" target="blank">United States Census Bureau (IL census tracts)</a> <br>
-      - <a href="https://data-lakecountyil.opendata.arcgis.com/datasets/9e04e707b4ef412a8be83fc7be43e1bc_1?geometry=-88.768%2C42.126%2C-87.033%2C42.482" target="blank">Lake County (Lake County Forest Preserves shapefile)</a> <br>
-      - <a href="http://faculty.wiu.edu/R-Porter/RPTA377/index.htm" target="blank">Rob Porter, Western Illinois University (IL State Parks shapefile)</a> <br>
-      - <a href="https://stats.oecd.org/glossary/detail.asp?ID=4842" target="blank">OECD (Gini index description)</a> <br>
-      - <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3590901/" target="blank"> <i>Spatial Disparities in the Distribution of Parks and Green Spaces in the USA</i> (importance of green spaces to socio-economic well being)</a>
-		</p>
   </div>
 
 </body>
