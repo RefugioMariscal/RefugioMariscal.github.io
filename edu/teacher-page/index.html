@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset=utf-8 />
+	<title>Mr. Mariscal's Class Website</title>
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700" rel="stylesheet">
+
+  <style>
+
+    body {
+      margin: 0;
+      font-family: 'PT Sans', 'Gill Sans MT', 'sans serif';
+      font-weight: 300;
+    }
+
+    h1 {
+      font-size: 6em;
+      font-family: 'Josefin Sans', 'Montserrat', 'Avenir';
+      font-weight: 400;
+      line-height: 1em;
+      color: #fbfaf7;
+      padding: 0% 8%;
+      margin-bottom: -.05em;
+    }
+
+    h2 {
+      font-size: 2.5em;
+      font-family: 'PT Sans', 'Gill Sans MT', 'sans serif';
+      font-weight: 200;
+      color: #fbfaf7;
+      padding: 0% 8.5% 4%;
+    }
+
+    h2.par {
+      font-family: 'Josefin Sans', 'Montserrat', 'Avenir';
+      font-weight: 400;
+      color: #1c2621;
+      padding: 8% 0% 0%;
+    }
+
+    h3 {
+      font-family: 'Josefin Sans', 'Montserrat', 'Avenir';
+      color: #3f4c45;
+    }
+
+    h4 {
+      font-size: 1.2em;
+      font-weight: 300;
+      color: #fbfaf7;
+      padding: 1% 8.5% 4%;
+    }
+
+    p {
+      font-size: 1.2em;
+      font-weight: 300;
+      line-height: 1.3em;
+      color: #3f4c45;
+      padding: 0% 0% 4%;
+    }
+
+
+    a {
+      color: #70877b;
+      text-decoration: none;
+    }
+
+    a:hover {
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    .responsive {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .main {
+      padding-top: 4%;
+      background-image: url(graphics/class.jpg);
+      background-size: contain;
+    }
+
+    .avatar {
+      height: 5%;
+      width: 5%;
+    }
+
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 3em;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      p {
+        font-size: .9em;
+      }
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="main">
+    <h1 style="color:#272828">Mr. Mariscal's<br>
+      Class Website</h1>
+    <h2 style="color:#272828">ENL Science & Social Studies Teacher <br>
+      John T. Magee Middle School</h2>
+  <div>
+
+  <div style="background-color:#fbfaf7; padding:0 5.5%">
+    <h2 class="par">A little bit about Mr. Mariscal <img src="graphics/avatar.png" alt="Mr. Mariscal's avatar" class="avatar"></h2>
+    <p>A proud graduate of District 116, I graduated from Round Lake High School and also attended Magee, Ellis, Village, and Beach schools.<br><br>
+    <u>Favorite Books</u><br>
+    East of Eden by John Steinbeck, American Wolf by Nate Blakeslee, the Harry Potter series by JK Rowling <br><br>
+    <u>Interests & Hobbies</u><br>
+    Hiking, Canoeing, Biking, Gardening, Birding, Maps, Conservation, Teaching my daughter about the natural world, Exploring new places <br><br>
+    <u>Favorite Place in the World</u><br>
+    My parents' home town, El Salitre, Jalisco, Mexico </p><br><br>
+
+    <h2 class="par">Lake County household income & park locations</h2>
+    <p>Although Lake County's Gini index is relatively high, Lake County Forest Preserve and Illinois State Park locations are fairly evenly spread throughout the county and located in communities of varying incomes, as can be seen in the map below. Demographic data on park and preserve visitors was unavailable at the time this map and website were published.</p>
+    <iframe width="100%" height="860" frameborder="0" src="https://nmp.carto.com/u/refugiomariscal/builder/cf35b4e6-8598-4651-815a-6d4c329768a8/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe><br>
+    <a href="https://nmp.carto.com/u/refugiomariscal/builder/cf35b4e6-8598-4651-815a-6d4c329768a8/embed" target="blank">Link to full page map</a>
+
+    <h2 class="par">Additional considerations</h2>
+    <p>Additional studies analyzing the impact the Lake County Forest Preserves and Illinois State Parks have on other factors such as mental and physical health of surrounding communities needs to be done to draw a more complete picture of the value they hold. These studies can help the county and state agencies plan future park locations and programs to ensure equitable access. </p>
+    <br><br><br>
+    <hr>
+    <h3>Maps and website authored by Refugio Mariscal. GitHub: <a href="https://github.com/RefugioMariscal" target="blank">@RefugioMariscal</a></h3>
+    <hr><br>
+    <p style="font-size:.9em">
+		University of Kentucky, Department of Geography <br>
+		March, 2019 <br>
+		Software used: <br>
+      - QGIS 3.4.4 on macOS Mojave <br>
+      - Atom 1.34.0 <br>
+      - <a href="https://carto.com/" target="_blank">Carto</a> <br>
+		Data sources: <br>
+      - <a href="https://factfinder.census.gov/faces/tableservices/jsf/pages/productview.xhtml?pid=ACS_12_5YR_B19083&prodType=table" target="blank">United States Census Bureau (Gini index data)</a> <br>
+      - <a href="https://www.census.gov/geo/maps-data/data/cbf/cbf_counties.html" target="blank">United States Census Bureau (county shapefiles)</a> <br>
+      - <a href="https://factfinder.census.gov/faces/tableservices/jsf/pages/productview.xhtml?pid=ACS_17_5YR_S1903&prodType=table" target="blank">United States Census Bureau (income data)</a> <br>
+      - <a href="https://www.census.gov/geo/maps-data/data/cbf/cbf_tracts.html" target="blank">United States Census Bureau (IL census tracts)</a> <br>
+      - <a href="https://data-lakecountyil.opendata.arcgis.com/datasets/9e04e707b4ef412a8be83fc7be43e1bc_1?geometry=-88.768%2C42.126%2C-87.033%2C42.482" target="blank">Lake County (Lake County Forest Preserves shapefile)</a> <br>
+      - <a href="http://faculty.wiu.edu/R-Porter/RPTA377/index.htm" target="blank">Rob Porter, Western Illinois University (IL State Parks shapefile)</a> <br>
+      - <a href="https://stats.oecd.org/glossary/detail.asp?ID=4842" target="blank">OECD (Gini index description)</a> <br>
+      - <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3590901/" target="blank"> <i>Spatial Disparities in the Distribution of Parks and Green Spaces in the USA</i> (importance of green spaces to socio-economic well being)</a>
+		</p>
+  </div>
+
+</body>
+
+
+</html>
