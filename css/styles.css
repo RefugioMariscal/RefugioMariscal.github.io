@@ -1,0 +1,64 @@
+/*!
+ * Start Bootstrap - Heroic Features (https://startbootstrap.com/template-overviews/heroic-features)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-heroic-features/blob/master/LICENSE)
+ */
+
+body {
+  font-family: 'Lora';
+  color: #404040;
+  background-color: #e5e1d5;
+}
+
+header {
+  padding: 154px 0 100px;
+  background-color: #e5e1d5;
+  font-family: 'Lora';
+}
+
+/* media query when the media is wider than 992px */
+@media (min-width: 992px) {
+  header {
+    padding: 300px 0;
+  }
+}
+
+/*navigation bar*/
+.nav-bg {
+  background-color: #e5e1d5;
+}
+
+/* subtitle */
+.subtitle {
+  font-family: 'Josefin Sans';
+  font-size: 1.5rem;
+  padding-left: 10px;
+}
+
+
+.portfolio-item {
+  margin-bottom: 30px;
+  color: #404040;
+}
+
+section {
+  padding: 80px 0;
+}
+
+a {
+  color: #526b60;
+}
+
+a:hover {
+  font-weight: 700;
+  color: #a34955
+}
+
+h1 {
+  font-size: 5.5rem;
+  font-weight: 600;
+}
+
+h2, h3, h4 {
+  font-family: 'Josefin Sans';
+}
