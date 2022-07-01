@@ -5,34 +5,27 @@
  */
 
 body {
-  font-family: 'Lora';
+  font-family: 'Roboto';
   color: #404040;
-  background-color: #e5e1d5;
+  background-color: #fcfcfb;
 }
 
 header {
   padding: 154px 0 100px;
-  background-color: #e5e1d5;
-  font-family: 'Lora';
+  background-color: #fcfcfb;
+  font-family: 'Titillium Web';
 }
 
 /* media query when the media is wider than 992px */
 @media (min-width: 992px) {
   header {
-    padding: 300px 0;
+    padding: 100px 0 10px;
   }
 }
 
 /*navigation bar*/
 .nav-bg {
-  background-color: #e5e1d5;
-}
-
-/* subtitle */
-.subtitle {
-  font-family: 'Josefin Sans';
-  font-size: 1.5rem;
-  padding-left: 10px;
+  background-color: #fcfcfb;
 }
 
 
@@ -42,7 +35,7 @@ header {
 }
 
 section {
-  padding: 80px 0;
+  padding: 10px 0;
 }
 
 a {
@@ -54,11 +47,7 @@ a:hover {
   color: #a34955
 }
 
-h1 {
-  font-size: 5.5rem;
-  font-weight: 600;
-}
 
-h2, h3, h4 {
-  font-family: 'Josefin Sans';
+h1, h2, h3, h4, dt {
+  font-family: 'Titillium Web';
 }
