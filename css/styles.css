@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Source Sans Pro';
-  color: #404040;
+  color: #242424;
   background-color: #ffffff;
 }
 
@@ -31,7 +31,7 @@ header {
 
 .portfolio-item {
   margin-bottom: 30px;
-  color: #404040;
+  color: #242424;
 }
 
 section {
@@ -39,24 +39,22 @@ section {
 }
 
 a {
-  color: #000000;
+  color: #242424;
 }
 
 a:hover {
   font-weight: 400;
-  color: #7c7c7c
+  color: #5b4c56
 }
 
-h1, h2, h5 {
+h1, h2, h3, h4, h5 {
   font-family: 'Staatliches';
+  color: #242424;
 } 
 
-h4 {
-  font-family: 'Source Sans Pro';
-} 
-
-h3, h6, dt {
+h6, dt {
   font-family: 'Ubuntu';
+  color: #242424;
 }
 
 /* portfolio item text */
@@ -74,6 +72,7 @@ h3, h6, dt {
   background-color: #000000;
 }
 
-#hicon {
-  text-align: right;
+.card {
+  border-color: transparent;
+  box-shadow: 2px 2px 8px #d6d6d6;
 }
