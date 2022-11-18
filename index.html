@@ -13,11 +13,13 @@
   <!-- Bootstrap CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Font Awesome CSS from CDN -->
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- Font Awesome kit-->
+  <script src="https://kit.fontawesome.com/e0b4082e16.js" crossorigin="anonymous"></script>
 
   <!-- Google web font -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Titillium+Web:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&family=Staatliches&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/styles.css" rel="stylesheet">
@@ -26,33 +28,32 @@
 
 <body id="page-top">
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark nav-bg fixed-top" id="mainNav">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger text-secondary" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger text-secondary" href="#about">About</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
   <!-- Header -->
   <header>
     <div class="container">
-      <h3>Refugio Mariscal</h3>
-      <h5>GIS & Conservation Professional</h5>
+      <div class="row">
+        <div class="col-md-9 mx-auto">
+          <h1>Refugio Mariscal</h1>
+        </div>
+        <div class="col-md-3 mx-auto">
+          <h1 id="hicon"><i class="fa-solid fa-earth-americas"></i></h1>
+        </div>
+      </div>
     </div>
   </header>
-
+  <div id="hback">
+    <img id="himage" src="graphics/header_map.png">
+  </div>
+  <div class="container">
+    <br>
+    <h5>GIS &nbsp &nbsp-&nbsp &nbsp Cartography &nbsp &nbsp-&nbsp &nbsp  Web Mapping &nbsp &nbsp-&nbsp &nbsp  Conservation</h5>
+    <br>
+    <p>I make maps, web apps, and visualizations, and manage ecological datasets from various bird and habitat monitoring programs throughout the Great Lakes region. My primary interests are in web mapping, cartography, and environmental conservation.<br>
+    Currently, GIS Analyst at Audubon Great Lakes, a regional office of the National Audubon Society.</p>
+    <p><i class="fa fa-github mr-2"></i><a href="https://github.com/RefugioMariscal" target="_blank">RefugioMariscal</a> &nbsp &nbsp &nbsp &nbsp
+    <i class="fa-solid fa-paper-plane mr-2"></i><a href="mailto: mariscalr@protonmail.com" target="_blank">mariscalr[at]protonmail[dot]com</a></p>
+    <br>
+  </div>
   <!-- Projects Section -->
   <section id="projects" class="portfolio-bg">
     <div class="container">
@@ -132,29 +133,28 @@
   <section id="about">
     <div class="container">
       <div class="row">
-        <div class="col-md-4 mx-auto">
-          <h5>About Me</h5>
-          <div class='my-5 clearfix'>
-            <p>GIS Analyst at Audubon Great Lakes, a regional office of the National Audubon Society.</p>
-            <p>I make maps, web apps, and visualizations, and manage ecological datasets from various bird and habitat monitoring programs throughout the Great Lakes region. My primary interests are in web mapping, cartography, and environmental conservation</p>
-            <p><i class="fa fa-github mr-2"></i><a href="https://github.com/RefugioMariscal" target="_blank">RefugioMariscal</a></p>
-            <p><i class="fa-solid fa-paper-plane"></i><a href="mailto: mariscalr@protonmail.com" target="_blank">mariscalr[at]protonmail[dot]com</a></p>
-          </div>
-        </div>
-        <div class="col-md-8">
-          <br><br>
+        <div class="col-md-6 mx-auto">
+          <h5>What I Know</h5>
           <dl>
             <dt>GIS</dt>
-            <dd>QGIS, ArcGIS Pro, R</dd>
+            <dd>QGIS, ArcGIS Pro, ArcGIS Online</dd>
             <dt>Web Mapping</dt>
             <dd>Mapbox, Carto, Leaflet, ArcGIS Online, Survey123, ArcGIS Hub, ArcGIS StoryMaps, ArcGIS Dashboards, ArcGIS Experience Builder, OpenStreetMap, Google Earth</dd>
+          </dl>
+        </div>
+        <div class="col-md-6 mx-auto">
+          <h5>&nbsp;</h5>
+          <dl>
             <dt>Programming & Web Design</dt>
-            <dd>Python, SQL, JavaScript, HTML, CSS, WordPress</dd>
+            <dd>R, Python, SQL, JavaScript, HTML, CSS, WordPress, Illustrator</dd>
             <dt>Conservation & Stewardship</dt>
             <dd>Bird Identification, Bird Monitoring, Plant Identification, Plant Monitoring, Habitat Surveying, Survey123, Environmental Education</dd>
-            <dt>Lake County Audubon Society</dt>
-            <dd>Board Member</dd>
           </dl>
+        </div>
+        <div class="col-md-12 mx-auto">
+          <br>
+          <p><i class="fa fa-github mr-2"></i><a href="https://github.com/RefugioMariscal" target="_blank">RefugioMariscal</a> &nbsp &nbsp &nbsp &nbsp
+          <i class="fa-solid fa-paper-plane mr-2"></i><a href="mailto: mariscalr@protonmail.com" target="_blank">mariscalr[at]protonmail[dot]com</a></p>
         </div>
       </div>
     </div>

@@ -5,27 +5,27 @@
  */
 
 body {
-  font-family: 'Roboto';
+  font-family: 'Source Sans Pro';
   color: #404040;
-  background-color: #fcfcfb;
+  background-color: #ffffff;
 }
 
 header {
-  padding: 154px 0 100px;
-  background-color: #fcfcfb;
-  font-family: 'Titillium Web';
+  padding: 20px 0 10px;
+  background-color: #ffffff;
+  font-family: 'Staatliches';
 }
 
 /* media query when the media is wider than 992px */
 @media (min-width: 992px) {
   header {
-    padding: 100px 0 10px;
+    padding: 20px 0 10px;
   }
 }
 
 /*navigation bar*/
 .nav-bg {
-  background-color: #fcfcfb;
+  background-color: #ffffff;
 }
 
 
@@ -39,20 +39,41 @@ section {
 }
 
 a {
-  color: #526b60;
+  color: #000000;
 }
 
 a:hover {
   font-weight: 400;
-  color: #a34955
+  color: #7c7c7c
 }
 
+h1, h2, h5 {
+  font-family: 'Staatliches';
+} 
 
-h1, h2, h3, h4, h5, h6, dt {
-  font-family: 'Titillium Web';
+h4 {
+  font-family: 'Source Sans Pro';
+} 
+
+h3, h6, dt {
+  font-family: 'Ubuntu';
 }
 
 /* portfolio item text */
 .port_text {
   font-size: .8em;
+}
+
+/* header map */
+#himage {
+  width: 100%;
+  opacity: .85;
+}
+
+#hback {
+  background-color: #000000;
+}
+
+#hicon {
+  text-align: right;
 }
