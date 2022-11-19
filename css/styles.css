@@ -47,12 +47,12 @@ a:hover {
   color: #5b4c56
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4 {
   font-family: 'Staatliches';
   color: #242424;
 } 
 
-h6, dt {
+h5, h6, dt {
   font-family: 'Ubuntu';
   color: #242424;
 }
