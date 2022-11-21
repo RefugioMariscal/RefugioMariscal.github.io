@@ -50,6 +50,8 @@ a:hover {
 h1, h2, h3, h4 {
   font-family: 'Staatliches';
   color: #242424;
+  line-height: 1em;
+  word-spacing: .1em;
 } 
 
 h5, h6, dt {
@@ -63,16 +65,29 @@ h5, h6, dt {
 }
 
 /* header map */
-#himage {
+.himage {
   width: 100%;
   opacity: .85;
 }
 
-#hback {
+.hback {
   background-color: #000000;
 }
 
 .card {
   border-color: transparent;
   box-shadow: 2px 2px 8px #d6d6d6;
+}
+
+
+/**** styles for portfolio item pages ****/
+/* header map */
+.hport {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.max_w_img {
+  width: 100%;
+  max-width: 800px;
 }
