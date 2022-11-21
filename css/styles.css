@@ -4,6 +4,8 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-heroic-features/blob/master/LICENSE)
  */
 
+/********** styles for all pages **********/
+
 /* query when screen is wider than 992px */
 @media (min-width: 992px) {
   header {
@@ -65,9 +67,7 @@ a:hover {
 }
 
 footer {
-  font-size: .8em;
-  color: #a1a1a1;
-  text-align: right;
+  background-color: #f9f9f9;
 }
 
 /*navigation bar*/
@@ -101,6 +101,12 @@ footer {
 .port_text {
   font-size: .8em;
 }
+
+.copy {
+  text-align: right;
+  color: #a1a1a1;
+  font-size: .8em;
+} 
 
 #img_cred {
   text-align: right;
