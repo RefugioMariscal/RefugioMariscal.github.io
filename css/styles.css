@@ -4,6 +4,29 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-heroic-features/blob/master/LICENSE)
  */
 
+/* query when screen is wider than 992px */
+@media (min-width: 992px) {
+  header {
+    padding: 20px 0 10px;
+  }
+}
+
+/* query when screen is  under 480 px wide */
+@media (max-width: 480px) {
+  h1, .h1 {
+    font-size: 30px;
+  }
+  h2, .h2 {
+    font-size: 26px;
+  }
+  h3, .h3 {
+    font-size: 22px;
+  }
+  h4, .h4 {
+    font-size: 22px;
+  }
+}
+
 body {
   font-family: 'Source Sans Pro';
   color: #242424;
@@ -14,37 +37,6 @@ header {
   padding: 20px 0 10px;
   background-color: #ffffff;
   font-family: 'Staatliches';
-}
-
-/* media query when the media is wider than 992px */
-@media (min-width: 992px) {
-  header {
-    padding: 20px 0 10px;
-  }
-}
-
-/*navigation bar*/
-.nav-bg {
-  background-color: #ffffff;
-}
-
-
-.portfolio-item {
-  margin-bottom: 30px;
-  color: #242424;
-}
-
-section {
-  padding: 10px 0;
-}
-
-a {
-  color: #242424;
-}
-
-a:hover {
-  font-weight: 400;
-  color: #5b4c56
 }
 
 h1, h2, h3, h4 {
@@ -59,9 +51,22 @@ h5, h6, dt {
   color: #242424;
 }
 
-/* portfolio item text */
-.port_text {
-  font-size: .8em;
+section {
+  padding: 10px 0;
+}
+
+a {
+  color: #E95670;
+}
+
+a:hover {
+  color: #B54358;
+  text-decoration: none;
+}
+
+/*navigation bar*/
+.nav-bg {
+  background-color: #ffffff;
 }
 
 /* header map */
@@ -70,23 +75,43 @@ h5, h6, dt {
   opacity: .85;
 }
 
+/* header background */
 .hback {
   background-color: #000000;
 }
 
+/* portfolio cards */
 .card {
   border-color: transparent;
   box-shadow: 2px 2px 8px #d6d6d6;
 }
 
+.portfolio-item {
+  margin-bottom: 30px;
+  color: #242424;
+}
 
-/**** styles for portfolio item pages ****/
+/* portfolio item text */
+.port_text {
+  font-size: .8em;
+}
+
+
+/********** styles for portfolio item pages **********/
+
+/* override link color for title */
+.titl {
+  color: #242424;
+  text-;
+}
+
 /* header map */
 .hport {
   width: 100%;
   padding-bottom: 30px;
 }
 
+/* max size for images */
 .max_w_img {
   width: 100%;
   max-width: 800px;
