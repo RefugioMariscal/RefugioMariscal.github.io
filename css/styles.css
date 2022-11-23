@@ -133,3 +133,8 @@ footer {
   width: 100%;
   max-width: 800px;
 }
+
+/* drop shadow */
+.dshadow {
+  box-shadow: 1px 1px 10px #b3b3b3;
+}
