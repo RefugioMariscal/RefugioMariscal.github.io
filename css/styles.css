@@ -138,3 +138,9 @@ footer {
 .dshadow {
   box-shadow: 1px 1px 10px #b3b3b3;
 }
+
+/* image caption */
+.captions p {
+  font-size: .8em;
+  padding: 0em 1em .5em 1em;
+}
