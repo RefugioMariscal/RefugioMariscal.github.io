@@ -36,7 +36,7 @@
     </div>
   </header>
   <div>
-    <img class="hport" src="graphics/spring_peak_header.png">
+    <img class="hport" src="graphics/motus_header.png">
   </div>
 
 	<section id="projects" class="portfolio-bg">
@@ -44,23 +44,25 @@
 			<div class="row">	
 				<!-- Description column  -->
 				<div class="col-md-4 mx-auto">
-					<h2>Spring Peak Bird Migration</h2>
-					<p>Bird migration hotspots in the Grand River Coastal Corridor study area from April 20 to May 31, years 2003 to 2008.</p>
+					<h2>Motus Range & Viewshed Analysis</h2>
+					<p>The Motus Wildlife Tracking System (Motus) is a network of radio telemetry stations that aids migratory animal research. Animals fastened with transmitters are detected and recorded when they come within range (typically 10-15 km) of a receiving station. Motus is a collaborative project, and stations are constructed and managed independently by various organizations.</p>
+					<p>Through funding from the Illinois Department of Natural Resources, Audubon Great Lakes sought to build two Motus receiving stations in the Chicago area to help fill in gaps along the Mississippi Flyway, a critical path for migrating birds.</p>
+					<p>I created these two maps as part of a site assessment of one of the proposed locations. This involved reviewing the receiver's extent range (in this case, 10 km) to ensure optimal placement relative to existing stations and performing a viewshed analysis to identify potential areas of obstruction.</p>
 					<dl>
 						<dt>Date</dt>
-							<dd>March 2021</dd>
+							<dd>January 2023</dd>
 						<dt>Software</dt>
 							<dd>ArcGIS Pro</dd>
 						<dt>Data Sources</dt>
-							<dd>Audubon Great Lakes, Michigan Natural Features Inventory</dd>
-						<dt>CRS</dt>
-							<dd>EPSG:3857</dd>
+							<dd>Lake County Illinois GIS, USGS NED</dd>
 					</dl>
-					<p><a href="graphics/spring_peak_1200px.png">Link to high resolution map</a></p>
 				</div>
 				<!-- Map column -->
-				<div class="col-md-8 mx-auto">
-					<img src="graphics/spring_peak_1200px.png" alt="Bird migration hotspots in western Michigan" class="max_w_img dshadow">
+				<div class="col-md-8 mx-auto captions">
+					<img src="graphics/motus_range.png" alt="A map showing a 10 kilometer area at 2 kilometer increments around Greenbelt Forest Preserve in North Chicago, IL." class="max_w_img">
+					<p>The planned Motus receivers has a range of approximately 10 kilometers. This map displays the coverage at two kilometer increments for the proposed location.</p>
+					<img src="graphics/motus_viewshed.png" alt="A map displaying the relative elevation of the surrounding 10 kilometer area." class="max_w_img">
+					<p>I used a digital elevation model dataset to perform a viewshed analysis to identify potential signal obstructions and evaluate site viability. This map displays the height in meters birds would need to ascend to reach the elevation of the Motus receiver and be detected.</p>
 				</div>
 			</div>	
 		</div>
