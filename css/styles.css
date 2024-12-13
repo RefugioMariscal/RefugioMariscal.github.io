@@ -75,17 +75,6 @@ footer {
   background-color: #ffffff;
 }
 
-/* header map */
-.himage {
-  width: 100%;
-  opacity: .85;
-}
-
-/* header background */
-.hback {
-  background-color: #000000;
-}
-
 /* portfolio cards */
 .card {
   border-color: transparent;
