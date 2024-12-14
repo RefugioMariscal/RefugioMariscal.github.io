@@ -6,10 +6,67 @@
 
 /********** styles for all pages **********/
 
+/* navigation tab links */
+.tabs-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tablink {
+  background-color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.tablink h3 {
+  margin: 0;
+  color: inherit;
+}
+
+.tablink:hover h4 {
+  color: #E95670;
+}
+
+.tablink.active::after {
+  color: #E95670;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #E95670;
+}
+
+.tabcontent {
+  display: none;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
 /* query when screen is wider than 992px */
 @media (min-width: 992px) {
   header {
     padding: 20px 0 10px;
+  }
+  .tabcontent {
+    padding-left: 150px;
+    padding-right: 150px;
   }
 }
 
@@ -27,11 +84,27 @@
   h4, .h4 {
     font-size: 22px;
   }
+  .tabs {
+    flex-direction: column; /* stack buttons vertically */
+    width: 100%;
+  }
+  .tablink {
+    width: 100%;
+  }
+  .tablink.active::after {
+    position: absolute;
+    width: 100%;
+  }
+  .tabcontent {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 body {
+  font-size: 20px;
   font-family: 'Source Sans Pro';
-  color: #242424;
+  color: #3a3a3a;
   background-color: #ffffff;
 }
 
@@ -41,16 +114,28 @@ header {
   font-family: 'Staatliches';
 }
 
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
 h1, h2, h3, h4 {
   font-family: 'Staatliches';
-  color: #242424;
+  color: #3a3a3a;
   line-height: 1em;
   word-spacing: .1em;
 } 
 
 h5, h6, dt {
   font-family: 'Ubuntu';
-  color: #242424;
+  color: #3a3a3a;
 }
 
 section {
@@ -77,13 +162,19 @@ footer {
 
 /* portfolio cards */
 .card {
-  border-color: transparent;
-  box-shadow: 2px 2px 8px #d6d6d6;
+  border-color: #3a3a3a;
+  border-width: 3px;
+  border-radius: 0;
+  /* box-shadow: 2px 2px 8px #d6d6d6; */
+}
+
+.card:hover {
+  border-width: 4px;
 }
 
 .portfolio-item {
   margin-bottom: 30px;
-  color: #242424;
+  color: #3a3a3a;
 }
 
 /* portfolio item text */
@@ -97,18 +188,11 @@ footer {
   font-size: .8em;
 } 
 
-#img_cred {
-  text-align: right;
-  font-size: .8em;
-  color: #a1a1a1;
-}
-
 
 /********** styles for portfolio item pages **********/
-
-/* override link color for title */
-.titl {
-  color: #242424;
+/* portfolio return link */
+.portfolio-return {
+  color:#E95670;
 }
 
 /* header map */
