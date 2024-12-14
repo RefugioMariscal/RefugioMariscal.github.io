@@ -27,227 +27,234 @@
 
 </head>
 
-<body id="page-top">
-
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <h2>Refugio Mariscal</h2>
+<body>
+  <!-- Tab Navigation -->
+  <div class="container">
+    <div class="tabs-wrapper">
+      <div class="tabs">
+        <button class="tablink" onclick="openPage('About', this)" id="defaultOpen"><h4>About</h4></button>
+        <button class="tablink" onclick="openPage('Portfolio', this)"><h4>Portfolio</h4></button>
+        <button class="tablink" onclick="openPage('Contact', this)"><h4>Contact</h4></button>
+      </div>
     </div>
-  </header>
+  </div>
 
-  <!-- About Me section-->
-  <section id="projects" class="portfolio-bg">
-    <div class="container">
-      <br>
-      <h1>Cartographer & Geospatial Data Analyst</h1>
-      <p>I have experience and primary interests in cartography, data analysis, web mapping, conservation, and exploring ways to create a more just and equitable world through maps, data, and nature.<br>
-      I've made lots of maps and handled data for nationwide conservation orgs such as the National Audubon Society and American Forests.</p>
-      <p><i class="fa-solid fa-paper-plane mr-2"></i><a href="mailto: mariscalr@protonmail.com" target="_blank">mariscalr[at]protonmail[dot]com</a> &nbsp &nbsp &nbsp &nbsp<i class="fa fa-github mr-2"></i><a href="https://github.com/RefugioMariscal" target="_blank">GitHub</a> &nbsp &nbsp &nbsp &nbsp<i class="fa-brands fa-linkedin mr-2"></i><a href="https://www.linkedin.com/in/refugio-mariscal-888720254/" target="_blank">LinkedIn</a></p>
-      <br>
-    </div>
-  </section>
+  <!-- About Tab -->
+  <div id="About" class="tabcontent">
+    <!-- About Me section-->
+    <section id="projects" class="portfolio-bg">
+      <div class="container">
+        <h1>Refugio Mariscal</h1>
+        <h2>Cartographer & Geospatial Data Analyst</h2>
+        <p>I have experience and primary interests in cartography, data analysis, web mapping, conservation, and exploring ways to create a more just and equitable world through maps, data, and nature.<br>
+        I've made lots of maps and handled data for nationwide conservation orgs such as the National Audubon Society and American Forests.</p>
+        <br>
+      </div>
+    </section>
 
-  <!-- Portfolio Section -->
-  <section id="projects" class="portfolio-bg">
-    <div class="container">
-      <h2>Portfolio</h2>
-      <br>
-      <div class="row">
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100" style="cursor: pointer;" onclick="window.location='https://greatlakesbirds-audubon.hub.arcgis.com';">
-            <img class="card-img-top" src="graphics/hub_crop.png" alt=""></a>
-            <div class="card-body">
-              <h5 class="card-title">
-                <p>Marsh Bird Data Hub</p>
-              </h5>
-              <h6 class="card-text port_text">Website</h6>
-              <p class="card-text port_text">ArcGIS Hub, ArcGIS Pro, ArcGIS Experience Builder, ArcGIS Dashboards, Survey123</p>
-            </div>
+    <!-- Skills Section -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <h3>Expertise & Specializations</h3>
+            <dt>Cartographic Design</dt>
+            <dd>Creating beautiful maps for effective communication. Thoughtful cartographic design helps turn complex data into clear, visually engaging maps that connect with people and make the information easy to understand.</dd>
+            <dt>Data Analysis & Visualization</dt>
+            <dd>Analyzing geospatial and non-geospatial data and transforming it into meaningful visual formats.</dd>
+            <dt>Conservation</dt>
+            <dd>Integrating ecological and human data to support environmental decision-making and community resilience.</dd>
+            <br>
+          </div>
+          <div class="col-md-6 mx-auto">    
+            <h3>Technical Proficiencies</h3>
+            <dt>Programming & Analysis</dt>
+            <dd>R, Python, SQL, Jupytyer Notebook</dd>
+            <dt>Web Mapping & Design</dt>
+            <dd>ArcGIS Online (Survey123, Hub, StoryMaps, Dashboards, Experience Builder, Field Maps), Mapbox, OpenStreetMap, HTML, CSS, JavaScript, WordPress, Adobe Illustrator, Figma, Affinity Designer</dd>
+            <br>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100" style="cursor: pointer;" onclick="window.location='/agl-projs/index.html';">
-            <img class="card-img-top" src="graphics/AGL_ProjS_crop.png" alt="Map of Audubon Great Lakes project sites">
-            <div class="card-body">
-              <h5 class="card-title">
-                <p>AGL Project Sites</p>
-              </h5>
-              <h6 class="card-text port_text">Static Map</h6>
-              <p class="card-text port_text">ArcGIS Pro</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- Portfolio Tab -->
+  <div id="Portfolio" class="tabcontent">
+    <section id="projects" class="portfolio-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100" style="cursor: pointer;" onclick="window.location='https://greatlakesbirds-audubon.hub.arcgis.com';">
+              <img class="card-img-top" src="graphics/hub_crop.png" alt=""></a>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <p>Marsh Bird Data Hub</p>
+                </h5>
+                <h6 class="card-text port_text">Website</h6>
+                <p class="card-text port_text">ArcGIS Hub, ArcGIS Pro, ArcGIS Experience Builder, ArcGIS Dashboards, Survey123</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100" style="cursor: pointer;" onclick="window.location='lake-county-income-parks/index.html';">
-            <img class="card-img-top" src="graphics/lc_parks_income_crop.png" alt="">
-            <div class="card-body">
-              <h5 class="card-title">
-                <p>Parks & Income in Lake County, IL</p>
-              </h5>
-              <h6 class="card-text port_text">Story Map</h6>
-              <p class="card-text port_text">CARTO</p>
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100" style="cursor: pointer;" onclick="window.location='/agl-projs/index.html';">
+              <img class="card-img-top" src="graphics/AGL_ProjS_crop.png" alt="Map of Audubon Great Lakes project sites">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <p>AGL Project Sites</p>
+                </h5>
+                <h6 class="card-text port_text">Static Map</h6>
+                <p class="card-text port_text">ArcGIS Pro</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100" style="cursor: pointer;" onclick="window.location='/il-waterways/index.html';">
-            <img class="card-img-top" src="graphics/illinois_waterways_crop.png" alt="Map of IL Waterways by Stahler stream order">
-            <div class="card-body">
-              <h5 class="card-title">
-                <p>Illinois Waterways</p>
-              </h5>
-              <h6 class="card-text port_text">Static Map</h6>
-              <p class="card-text port_text">QGIS</p>
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100" style="cursor: pointer;" onclick="window.location='lake-county-income-parks/index.html';">
+              <img class="card-img-top" src="graphics/lc_parks_income_crop.png" alt="">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <p>Parks & Income in Lake County, IL</p>
+                </h5>
+                <h6 class="card-text port_text">Story Map</h6>
+                <p class="card-text port_text">CARTO</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100" style="cursor: pointer;" onclick="window.location='/sp-bird-mig/index.html';">
-            <img class="card-img-top" src="graphics/spring_peak_crop.png" alt="Map of spring peak bird migration in the Grand River Coastal Corridor">
-            <div class="card-body">
-              <h5 class="card-title">
-                <p>Spring Peak Bird Migration</p>
-              </h5>
-              <h6 class="card-text port_text">Static Map</h6>
-              <p class="card-text port_text">ArcGIS Pro</p>
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100" style="cursor: pointer;" onclick="window.location='/il-waterways/index.html';">
+              <img class="card-img-top" src="graphics/illinois_waterways_crop.png" alt="Map of IL Waterways by Stahler stream order">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <p>Illinois Waterways</p>
+                </h5>
+                <h6 class="card-text port_text">Static Map</h6>
+                <p class="card-text port_text">QGIS</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100" style="cursor: pointer;" onclick="window.location='https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Faudubon.maps.arcgis.com%2Fapps%2Fwebappviewer%2Findex.html%3Fid%3D74fd374036ec4c69a0a72883c9287ba6&data=02%7C01%7Crmariscal%40uky.edu%7C4787a2be88164008485908d7e4b27dc0%7C2b30530b69b64457b818481cb53d42ae%7C0%7C1%7C637229327592366923&sdata=1NW%2FEhxc8ix5ygqpFJPhQgeVOnp68LsNVDgXJJP%2BEKI%3D&reserved=0';">
-            <img class="card-img-top" src="graphics/black_tern_crop.png" alt="">
-            <div class="card-body">
-              <h5 class="card-title">
-                <p>Black Tern Priority Sites</p>
-              </h5>
-              <h6 class="card-text port_text">Web Map</h6>
-              <p class="card-text port_text">ArcGIS Pro, ArcGIS Online Web AppBuilder</p>
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100" style="cursor: pointer;" onclick="window.location='/sp-bird-mig/index.html';">
+              <img class="card-img-top" src="graphics/spring_peak_crop.png" alt="Map of spring peak bird migration in the Grand River Coastal Corridor">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <p>Spring Peak Bird Migration</p>
+                </h5>
+                <h6 class="card-text port_text">Static Map</h6>
+                <p class="card-text port_text">ArcGIS Pro</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100" style="cursor: pointer;" onclick="window.location='/toxic-air-in/index.html';">
-            <img class="card-img-top" src="graphics/604a_analysis_crop.png" alt="">
-            <div class="card-body">
-              <h5 class="card-title">
-                <p>Race & Toxic Air Pollution in NW Indiana</p>
-              </h5>
-              <h6 class="card-text port_text">Static Map</h6>
-              <p class="card-text port_text">ArcGIS Pro, Adobe Illustrator</p>
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100" style="cursor: pointer;" onclick="window.location='https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Faudubon.maps.arcgis.com%2Fapps%2Fwebappviewer%2Findex.html%3Fid%3D74fd374036ec4c69a0a72883c9287ba6&data=02%7C01%7Crmariscal%40uky.edu%7C4787a2be88164008485908d7e4b27dc0%7C2b30530b69b64457b818481cb53d42ae%7C0%7C1%7C637229327592366923&sdata=1NW%2FEhxc8ix5ygqpFJPhQgeVOnp68LsNVDgXJJP%2BEKI%3D&reserved=0';">
+              <img class="card-img-top" src="graphics/black_tern_crop.png" alt="">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <p>Black Tern Priority Sites</p>
+                </h5>
+                <h6 class="card-text port_text">Web Map</h6>
+                <p class="card-text port_text">ArcGIS Pro, ArcGIS Online Web AppBuilder</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100" style="cursor: pointer;" onclick="window.location='/r-mbirds/index.html';">
-            <img class="card-img-top" src="graphics/obs_bub_plot_crop.png" alt="">
-            <div class="card-body">
-              <h5 class="card-title">
-                <p>Calumet Indiana Marsh Bird Observations</p>
-              </h5>
-              <h6 class="card-text port_text">Data Visualization</h6>
-              <p class="card-text port_text">R Studio</p>
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100" style="cursor: pointer;" onclick="window.location='/toxic-air-in/index.html';">
+              <img class="card-img-top" src="graphics/604a_analysis_crop.png" alt="">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <p>Race & Toxic Air Pollution in NW Indiana</p>
+                </h5>
+                <h6 class="card-text port_text">Static Map</h6>
+                <p class="card-text port_text">ArcGIS Pro, Adobe Illustrator</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100" style="cursor: pointer;" onclick="window.location='https://storymaps.arcgis.com/stories/2393a451e13d478fb6ab97616fae03c5';">
-            <img class="card-img-top" src="graphics/col_wbirds_crop.png" alt="">
-            <div class="card-body">
-              <h5 class="card-title">
-                <p>Colonial Nesting Waterbirds in NW Indiana</p>
-              </h5>
-              <h6 class="card-text port_text">Story Map</h6>
-              <p class="card-text port_text">ArcGIS StoryMaps, ArcGIS Online</p>
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100" style="cursor: pointer;" onclick="window.location='/r-mbirds/index.html';">
+              <img class="card-img-top" src="graphics/obs_bub_plot_crop.png" alt="">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <p>Calumet Indiana Marsh Bird Observations</p>
+                </h5>
+                <h6 class="card-text port_text">Data Visualization</h6>
+                <p class="card-text port_text">R Studio</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100" style="cursor: pointer;" onclick="window.location='https://experience.arcgis.com/experience/3c71bb5930664b7ab876355fee97e5e7';">
-            <img class="card-img-top" src="graphics/bike_rides_crop.png" alt="">
-            <div class="card-body">
-              <h5 class="card-title">
-                <p>Bike Rides</p>
-              </h5>
-              <h6 class="card-text port_text">Web Map</h6>
-              <p class="card-text port_text">ArcGIS Experience Builder, ArcGIS Online, ArcGIS Field Maps</p>
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100" style="cursor: pointer;" onclick="window.location='https://storymaps.arcgis.com/stories/2393a451e13d478fb6ab97616fae03c5';">
+              <img class="card-img-top" src="graphics/col_wbirds_crop.png" alt="">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <p>Colonial Nesting Waterbirds in NW Indiana</p>
+                </h5>
+                <h6 class="card-text port_text">Story Map</h6>
+                <p class="card-text port_text">ArcGIS StoryMaps, ArcGIS Online</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100" style="cursor: pointer;" onclick="window.location='/proj-map/index.html';">
-            <img class="card-img-top" src="graphics/proj_map_crop.png" alt="">
-            <div class="card-body">
-              <h5 class="card-title">
-                <p>Project Mapper</p>
-              </h5>
-              <h6 class="card-text port_text">GIS Web App</h6>
-              <p class="card-text port_text">ArcGIS Experience Builder, ArcGIS Online, Survey123</p>
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100" style="cursor: pointer;" onclick="window.location='https://experience.arcgis.com/experience/3c71bb5930664b7ab876355fee97e5e7';">
+              <img class="card-img-top" src="graphics/bike_rides_crop.png" alt="">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <p>Bike Rides</p>
+                </h5>
+                <h6 class="card-text port_text">Web Map</h6>
+                <p class="card-text port_text">ArcGIS Experience Builder, ArcGIS Online, ArcGIS Field Maps</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100" style="cursor: pointer;" onclick="window.location='/motus-range-viewshed/index.html';">
-            <img class="card-img-top" src="graphics/motus_crop.png" alt="">
-            <div class="card-body">
-              <h5 class="card-title">
-                <p>Motus Range & Viewshed Analysis</p>
-              </h5>
-              <h6 class="card-text port_text">Static Map</h6>
-              <p class="card-text port_text">ArcGIS Pro</p>
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100" style="cursor: pointer;" onclick="window.location='/proj-map/index.html';">
+              <img class="card-img-top" src="graphics/proj_map_crop.png" alt="">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <p>Project Mapper</p>
+                </h5>
+                <h6 class="card-text port_text">GIS Web App</h6>
+                <p class="card-text port_text">ArcGIS Experience Builder, ArcGIS Online, Survey123</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100" style="cursor: pointer;" onclick="window.location='/motus-range-viewshed/index.html';">
+              <img class="card-img-top" src="graphics/motus_crop.png" alt="">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <p>Motus Range & Viewshed Analysis</p>
+                </h5>
+                <h6 class="card-text port_text">Static Map</h6>
+                <p class="card-text port_text">ArcGIS Pro</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <br>
+    </section>
+    <br>
+  </div>
 
-  <!-- Skills Section -->
-  <section id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 mx-auto">
-          <h2>Expertise & Specializations</h2>
-          <dt>Cartographic Design</dt>
-          <dd>Creating beautiful maps for effective communication. Thoughtful cartographic design helps turn complex data into clear, visually engaging maps that connect with people and make the information easy to understand.</dd>
-          <dt>Data Analysis & Visualization</dt>
-          <dd>Analyzing geospatial and non-geospatial data and transforming it into meaningful visual formats.</dd>
-          <dt>Conservation</dt>
-          <dd>Integrating ecological and human data to support environmental decision-making and community resilience.</dd>
-          <br>
-        </div>
-        <div class="col-md-6 mx-auto">    
-          <h2>Technical Proficiencies</h2>
-          <dt>Programming & Analysis</dt>
-          <dd>R, Python, SQL, Jupytyer Notebook</dd>
-          <dt>Web Mapping & Design</dt>
-          <dd>ArcGIS Online (Survey123, Hub, StoryMaps, Dashboards, Experience Builder, Field Maps), Mapbox, OpenStreetMap, HTML, CSS, JavaScript, WordPress, Adobe Illustrator, Figma, Affinity Designer</dd>
-          <br>
+  <!-- Contact Tab -->
+  <div id="Contact" class="tabcontent">
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mx-auto">
+            <h2>Let's make some maps</h2>
+            <p>I'm currently open to new projects. Whether you need a custom map, GIS analysis, or data visualization, feel free to reach out—I’d love to hear about your ideas and how I can help bring them to life!</p>
+            <dl>
+              <dd><i class="fa-solid fa-paper-plane mr-2"></i><a href="mailto: mariscalr@protonmail.com" target="_blank">mariscalr[at]protonmail[dot]com</a></dd>
+              <dd><i class="fa fa-github mr-2"></i><a href="https://github.com/RefugioMariscal" target="_blank">GitHub</a></dd>
+              <dd><i class="fa-brands fa-linkedin mr-2"></i><a href="https://www.linkedin.com/in/refugio-mariscal-888720254/" target="_blank">LinkedIn</a></dd>
+            </dl>
+          </div>
+          <div class="col-md-12 mx-auto">
+            <br>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 mx-auto">
-          <h2>Contact</h2>
-          <p>I'm currently open to new projects. Whether you need a custom map, GIS analysis, or data visualization, feel free to reach out—I’d love to hear about your ideas and how I can help bring them to life!</p>
-          <dl>
-            <dd><i class="fa-solid fa-paper-plane mr-2"></i><a href="mailto: mariscalr@protonmail.com" target="_blank">mariscalr[at]protonmail[dot]com</a></dd>
-            <dd><i class="fa fa-github mr-2"></i><a href="https://github.com/RefugioMariscal" target="_blank">GitHub</a></dd>
-            <dd><i class="fa-brands fa-linkedin mr-2"></i><a href="https://www.linkedin.com/in/refugio-mariscal-888720254/" target="_blank">LinkedIn</a></dd>
-          </dl>
-        </div>
-        <div class="col-md-12 mx-auto">
-          <br>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
   <!-- Footer -->
   <footer class="py-5">
@@ -275,6 +282,26 @@
 
   <!-- Custom JavaScript for this theme -->
   <script src="js/scrolling-nav.js"></script>
+
+  <!-- Tabs JavaScript -->
+  <script>
+    function openPage(pageName, elmnt) {
+      var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].classList.remove("active"); // Remove 'active' class from all buttons
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.classList.add("active"); // Add 'active' class to the clicked button
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
 
 </body>
 
