@@ -114,6 +114,10 @@ header {
   font-family: 'Staatliches';
 }
 
+header h4 {
+  color: inherit;
+}
+
 h1 {
   font-size: 60px;
 }
