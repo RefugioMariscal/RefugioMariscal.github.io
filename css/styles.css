@@ -36,7 +36,7 @@
   color: inherit;
 }
 
-.tablink:hover h4 {
+.tablink:hover h3 {
   color: #E95670;
 }
 
@@ -119,11 +119,11 @@ h1 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 38px;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 h1, h2, h3, h4 {
@@ -153,6 +153,15 @@ a:hover {
 
 footer {
   background-color: #f9f9f9;
+}
+
+hr {
+  border-color: #E95670;
+  border-width: 4px;
+  width: 150px;
+  text-align: left;
+  margin-left: 15px;
+  margin-top: 30px;
 }
 
 /*navigation bar*/
