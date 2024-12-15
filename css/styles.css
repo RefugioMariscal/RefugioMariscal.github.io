@@ -68,6 +68,11 @@
     padding-left: 150px;
     padding-right: 150px;
   }
+  .tabcontent #contact {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 180px;
+  }
 }
 
 /* query when screen is  under 480 px wide */
