@@ -288,22 +288,34 @@
   <script>
     function openPage(pageName, elmnt) {
       var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active"); // Remove 'active' class from all buttons
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.classList.add("active"); // Add 'active' class to the clicked button
     }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].classList.remove("active"); // Remove 'active' class from all buttons
-    }
-    document.getElementById(pageName).style.display = "block";
-    elmnt.classList.add("active"); // Add 'active' class to the clicked button
-    }
-    
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
-  </script>
-
+  
+    // On page load, check if there's a hash in the URL
+    window.addEventListener("DOMContentLoaded", () => {
+      const hash = window.location.hash.replace("#", ""); // Remove the "#" symbol
+      if (hash) {
+        // Try to find the matching tab button
+        const tabButton = Array.from(document.getElementsByClassName("tablink"))
+          .find(btn => btn.textContent.trim() === hash);
+        if (tabButton) {
+          openPage(hash, tabButton);
+          return;
+        }
+      }
+      // If no hash or matching tab, open the default tab
+      document.getElementById("defaultOpen").click();
+    });
+  </script>  
 </body>
 
 </html>
