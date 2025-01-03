@@ -173,9 +173,14 @@ hr {
   margin-top: 30px;
 }
 
-/*navigation bar*/
+/* navigation bar */
 .nav-bg {
   background-color: #ffffff;
+}
+
+/* about bullet points */
+.bullets {
+  color:#E95670;
 }
 
 /* portfolio cards */
