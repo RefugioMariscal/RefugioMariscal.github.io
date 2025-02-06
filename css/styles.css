@@ -240,3 +240,8 @@ hr {
   font-size: .8em;
   padding: 0em 1em .5em 1em;
 }
+
+/* rounded corners */
+.rounded {
+  border-radius: 2.75% !important;
+}
