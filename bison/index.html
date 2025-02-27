@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  
+	<title>Refugio Mariscal</title>
+	<link rel="icon" type="image/x-icon" href="/graphics/rm_favicon_180px.png">
+  
+	<!-- Bootstrap CSS -->
+	<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+	<!-- Font Awesome kit-->
+	<script src="https://kit.fontawesome.com/e0b4082e16.js" crossorigin="anonymous"></script>
+  
+	<!-- Google web font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&family=Staatliches&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+  
+	<!-- Stylesheet -->
+	<link href="../css/styles.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+	
+	<!-- Header -->
+  <header>
+		<div class="container">
+			<a href="/index.html#Portfolio" class="portfolio-return">
+				<h4><i class="fa-solid fa-angles-left"></i> Return to Portfolio</h4>
+			</a>
+		</div>	
+  </header>
+  <div>
+    <img class="hport" src="graphics/bison_header.png">
+  </div>
+
+	<section id="projects" class="portfolio-bg">
+    <div class="container">
+			<!-- Description row-->
+			<div class="row">
+				<!-- Map Title -->
+				<div class="col-md-12 mx-auto">
+					<h2>Near Extinction of the American Bison</h2>
+				</div>
+				<!-- Description -->
+				<!-- Right column  -->
+				<div class="col-md-6 mx-auto">
+					<p>A map gif displaying a timeline of the range decline of the American bison in North America in the 18th and 19th centuries. The range area was drawn from the map <a href="https://digital.library.cornell.edu/catalog/ss:3293847">"Map Illustrating the Extermination of the American Bison"</a>, with a few areas filled in with data from two other sources: <a href="http://www.mappingthenation.com/index.php/viewer/index/0">"Map of North America. Kentucky Geological Survey. 1876. Map of Bison Distribution Over Time"</a> (map) and <a href="">"Historic Distribution and Challenges to Bison Recovery in the Northern Chihuahuan Desert"</a>(research paper).</p>
+					<p>This is a Leaflet map built into an R Shiny application in order to create the timeline. I used QGIS to georeference the source maps and draw the bison range polygons. Land polygons, borders, rivers, and oceans were loaded in from <a href="https://www.naturalearthdata.com/">Natural Earth</a>. I created the dot pattern texture directly within the R scripts. Finally, the mountain svg symbol was created in Affinity Designer 2 and added to a point layer.</p>
+				</div>
+				<!-- Left column -->
+				<div class="col-md-6 mx-auto">
+					<p>Note that the basemap uses modern nation borders. The map would be improved by using the historic borders corresponding with the timeline, but much more extensive research would need to be conducted in order to accurately include Native communities.</p>
+					<dl>
+						<dt>Date</dt>
+							<dd>February 2025</dd>
+						<dt>Software</dt>
+							<dd>QGIS, R Studio, Leaflet, Affinity Designer 2</dd>
+						<dt>Source</dt>
+							<div class="sources">
+								<dd><a href="https://www.naturalearthdata.com/">Natural Earth</a></dd>
+								<dd><a href="https://digital.library.cornell.edu/catalog/ss:3293847">Cornell University Library</a></dd>
+								<dd><a href="http://www.mappingthenation.com/index.php/viewer/index/0">Mapping the Nation</a></dd>
+								<dd><a href="https://tesf.org/wp-content/uploads/2013/11/List-etal_-2007.pdf">Turner Endangered Species Fund, Instituto de Ecología: Universidad Nacional Autónoma de México</a></dd>
+							</div>
+					</dl>
+				</div>
+			</div>
+			<div class="row">
+				<!-- Map row -->
+				<div class="col-md-12 mx-auto">
+					<img src="graphics/bison_range_map.gif" class="bison-gif"></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+	<br>
+
+  <!-- Footer -->
+  <footer class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 mx-auto">
+          <p><a href="mailto: mariscalr@protonmail.com" target="_blank"><i class="fa fa-paper-plane mr-2" href="https://github.com/RefugioMariscal" target="_blank"></i></a> <a href="https://github.com/RefugioMariscal" target="_blank"><i class="fa fa-github mr-2"></i></a> <a href="https://www.linkedin.com/in/refugio-mariscal-888720254/" target="_blank"><i class="fa-brands fa-linkedin mr-2"></i></a></p>
+        </div>
+        <div class="col-md-6 col-sm-6 mx-auto">
+          <p class="m-0 copy">Copyright &copy; Refugio Mariscal 
+          2024</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JQuery JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript Plugin -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
