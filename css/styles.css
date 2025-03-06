@@ -6,12 +6,24 @@
 
 /********** styles for all pages **********/
 
+/* logo wrapper */
+.logo-wrapper {
+  position: absolute;
+  top: 25px;
+  left: 30px;
+}
+
+/* logo */
+.logo {
+  height: 50px;
+}
+
 /* navigation tab links */
 .tabs-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 120px;
   padding-bottom: 50px;
 }
 
