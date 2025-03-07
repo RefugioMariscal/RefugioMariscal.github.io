@@ -9,8 +9,8 @@
 /* logo wrapper */
 .logo-wrapper {
   position: absolute;
-  top: 25px;
-  left: 30px;
+  top: 15px;
+  left: 20px;
 }
 
 /* logo */
@@ -220,11 +220,25 @@ hr {
   font-size: .8em;
 } 
 
+.container {
+  width: 100%;
+}
 
 /********** styles for portfolio item pages **********/
+/* portfolio header */
+.portfolio-header {
+  height: 80px;
+  padding-left: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
 /* portfolio return link */
 .portfolio-return {
   color:#E95670;
+  margin: 0;
+  padding: 0;
 }
 
 /* header map */
